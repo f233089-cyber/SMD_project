@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/dialogCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/dialogMealTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meal title" />
+
+        <EditText
+            android:id="@+id/dialogMealArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area / cuisine" />
+
+        <EditText
+            android:id="@+id/dialogMealRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating 1-5"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/dialogMealNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes"
+            android:minLines="2" />
+
+        <EditText
+            android:id="@+id/dialogMealImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Image URL optional" />
+
+        <EditText
+            android:id="@+id/dialogMealInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instructions optional"
+            android:minLines="3" />
+    </LinearLayout>
+</ScrollView>
